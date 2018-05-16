@@ -1,0 +1,77 @@
+// ConsoleApplication2.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+#include <string>
+#include <stdlib.h>
+using namespace std;
+
+class Human 
+{
+private: 
+	      string name;
+		  int age;
+		  char sex;
+
+public:
+		  void setMaggie(string SetNameMaggie  ) 
+		  {
+			  cout << "Maggie" << endl;
+		  }
+		  void setHomer(string setHomer)
+		  {
+			  cout << "Bart" << endl;
+		  }
+		  void setLisa(string setLisa)
+		  {
+			  cout << "Lisa" << endl;
+		  }
+
+		  int get_Maggie;
+		  int get_Homer;
+		  int get_Lisa;
+
+		  virtual int work() 
+		  {
+			  return 0;
+		  }
+
+
+};
+
+class Parent: public Human
+{
+private:
+	vector<Child> children
+};
+
+class Child : public Human
+{
+private: 
+	parent Mom;
+	parent Dad;
+
+	Child()
+	{
+
+	}
+
+public:
+
+};
+
+
+int main()
+{
+	cout << "the simpson's Family" << endl;
+	cout << fixed << setw(4) << endl;
+
+	
+
+	system("pause");
+    return 0;
+}
+
